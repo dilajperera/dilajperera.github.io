@@ -30,7 +30,10 @@
     'DAM_2208', 'DAM_2213', 'DAM_2214', 'DAM_2222', 'DAM_2227', 'DAM_2229', 'DAM_2235', 'DAM_2249', 'DAM_2266', 'DAM_2276', 'DAM_2284', 'DAM_2287', 'DAM_2300',
     'DAM_2302', 'DAM_2310', 'DAM_2323', 'DAM_2342', 'DAM_2392', 'DAM_2413', 'DAM_2416', 'DAM_2431', 'DAM_2443', 'DAM_2450', 'DAM_2457', 'DAM_2544', 'DAM_2563',
     'DAM_2571', 'DAM_2580', 'DAM_2596', 'DAM_2606', 'DAM_2622', 'DAM_2645', 'DAM_2660', 'DAM_2661', 'DAM_2669', 'DAM_2675', 'DAM_2677', 'DAM_2685', 'DAM_2694',
-    'DAM_2715', 'DAM_2745', 'DAM_2782', 'DAM_2840', 'DAM_2992' ];
+    'DAM_2715', 'DAM_2745', 'DAM_2782', 'DAM_2840', 'DAM_2992',
+    'DSC_0458', 'DSC_0329', 'DSC_0359', 'DSC_0378', 'DSC_0382', 'DSC_0392', 'DSC_0400', 'DSC_0416', 'DSC_0421', 'DSC_0434', 'DSC_0496', 'DSC_0500', 'DSC_0504',
+    'DSC_0509', 'DSC_0515', 'DSC_0529', 'DSC_0555', 'DSC_0563', 'DSC_0577', 'DSC_0606', 'DSC_0613', 'DSC_0627', 'DSC_0628', 'DSC_0643', 'DSC_0683', 'DSC_0709',
+    'DSC_0720', 'DSC_0736', 'DSC_0797', 'DSC_0847', 'DSC_0855', 'DSC_0813'];
 	  images.forEach(function(image){
 	  		var imageDiv = $('<div></div>').attr({ class : 'col-md-4 ftco-animate'});
 	  		var imagePath = 'images/' + image + '.jpg';

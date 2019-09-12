@@ -23,10 +23,14 @@
 	'ABC_3649', 'ABC_3658', 'ABC_3667', 'ABC_3682', 'ABC_3684', 'ABC_3686', 'ABC_3694', 'ABC_3698', 'ABC_3711', 'ABC_3712', 'ABC_3717', 'ABC_3718', 'ABC_3721',
 	'ABC_3723', 'ABC_3735', 'ABC_3741', 'ABC_3752', 'ABC_3769', 'ABC_3773', 'ABC_3775', 'ABC_3783', 'ABC_3790', 'ABC_3819', 'ABC_3845', 'ABC_3857', 'ABC_3859',
 	'ABC_3888', 'DAM_3011', 'ABC_3942', 'ABC_3956', 'ABC_3957', 'ABC_4016', 'ABC_4029', 'ABC_4076', 'ABC_4079', 'ABC_4081', 'ABC_4083', 'ABC_4085', 'ABC_4087', 'ABC_4092',
-	'ABC_4097', 'ABC_4099', 'ABC_4131', 'ABC_4139', 'ABC_4155', 'ABC_3824', 'ABC_3960', 'ABC_4226', 'DAM_2914', 'DAM_2929', 'ABC_4240', 'ABC_4278', 'DAM_2951',
+	'ABC_4097', 'ABC_4099', 'ABC_4131', 'ABC_4139', 'ABC_4155', 'ABC_3824', 'ABC_3960', 'ABC_4226', 'DAM_2914', 'DAM_2929', 'ABC_4240', 'ABC_4278', 'DAM_2951', 'DAM_2999',
     'ABC_4354', 'ABC_4362', 'ABC_4366', 'ABC_4370', 'ABC_4386', 'DAM_3064', 'ABC_4413', 'ABC_4416', 'ABC_4419', 'ABC_4430', 'ABC_4440', 'DAM_1981', 'DAM_1994',
     'DAM_1998', 'DAM_2011', 'DAM_2014', 'DAM_2020', 'DAM_2028', 'DAM_2038', 'DAM_2050', 'DAM_2062', 'DAM_2069', 'DAM_2077', 'DAM_2081', 'DAM_2090', 'DAM_2096',
-    'DAM_2103', 'DAM_2114', 'DAM_2116', 'DAM_2123', 'DAM_2125', 'DAM_2134', 'DAM_2142', 'DAM_2145', 'DAM_2165', 'DAM_2169', 'DAM_2174', 'DAM_2201', 'DAM_2204'  ];
+    'DAM_2103', 'DAM_2114', 'DAM_2116', 'DAM_2123', 'DAM_2125', 'DAM_2134', 'DAM_2142', 'DAM_2145', 'DAM_2165', 'DAM_2169', 'DAM_2174', 'DAM_2201', 'DAM_2204',
+    'DAM_2208', 'DAM_2213', 'DAM_2214', 'DAM_2222', 'DAM_2227', 'DAM_2229', 'DAM_2235', 'DAM_2249', 'DAM_2266', 'DAM_2276', 'DAM_2284', 'DAM_2287', 'DAM_2300',
+    'DAM_2302', 'DAM_2310', 'DAM_2323', 'DAM_2342', 'DAM_2392', 'DAM_2413', 'DAM_2416', 'DAM_2431', 'DAM_2443', 'DAM_2450', 'DAM_2457', 'DAM_2544', 'DAM_2563',
+    'DAM_2571', 'DAM_2580', 'DAM_2596', 'DAM_2606', 'DAM_2622', 'DAM_2645', 'DAM_2660', 'DAM_2661', 'DAM_2669', 'DAM_2675', 'DAM_2677', 'DAM_2685', 'DAM_2694',
+    'DAM_2715', 'DAM_2745', 'DAM_2782', 'DAM_2840', 'DAM_2992' ];
 	  images.forEach(function(image){
 	  		var imageDiv = $('<div></div>').attr({ class : 'col-md-4 ftco-animate'});
 	  		var imagePath = 'images/' + image + '.jpg';
@@ -41,7 +45,7 @@
                 placeholder: "data:image/gif;base64,R0lGODlhEALAPQAPzl5uLr9Nrl8e7..."
              });
 
-	var fullHeight = function() {
+	var fullHeight = function() { 
 
 		$('.js-fullheight').css('height', $(window).height());
 		$(window).resize(function(){

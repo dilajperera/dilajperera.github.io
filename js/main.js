@@ -24,7 +24,7 @@
 	'ABC_3723', 'ABC_3735', 'ABC_3741', 'ABC_3752', 'ABC_3769', 'ABC_3773', 'ABC_3775', 'ABC_3783', 'ABC_3790', 'ABC_3819', 'ABC_3845', 'ABC_3857', 'ABC_3859',
 	'ABC_3888', 'DAM_3011', 'ABC_3942', 'ABC_3956', 'ABC_3957', 'ABC_4016', 'ABC_4029', 'ABC_4076', 'ABC_4079', 'ABC_4081', 'ABC_4083', 'ABC_4085', 'ABC_4087', 'ABC_4092',
 	'ABC_4097', 'ABC_4099', 'ABC_4131', 'ABC_4139', 'ABC_4155', 'ABC_3824', 'ABC_3960', 'ABC_4226', 'DAM_2914', 'DAM_2929', 'ABC_4240', 'ABC_4278', 'DAM_2951',
-	'ABC_4099', 'ABC_4354', 'ABC_4362', 'ABC_4366', 'ABC_4370', 'ABC_4386', 'DAM_3064', 'ABC_4413', 'ABC_4416', 'ABC_4419', 'ABC_4430', 'ABC_4440' ];
+    'ABC_4354', 'ABC_4362', 'ABC_4366', 'ABC_4370', 'ABC_4386', 'DAM_3064', 'ABC_4413', 'ABC_4416', 'ABC_4419', 'ABC_4430', 'ABC_4440' ];
 	  images.forEach(function(image){
 	  		var imageDiv = $('<div></div>').attr({ class : 'col-md-4 ftco-animate'});
 	  		var imagePath = 'images/' + image + '.jpg';

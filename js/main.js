@@ -24,17 +24,22 @@
 	'ABC_3723', 'ABC_3735', 'ABC_3741', 'ABC_3752', 'ABC_3769', 'ABC_3773', 'ABC_3775', 'ABC_3783', 'ABC_3790', 'ABC_3819', 'ABC_3845', 'ABC_3857', 'ABC_3859',
 	'ABC_3888', 'DAM_3011', 'ABC_3942', 'ABC_3956', 'ABC_3957', 'ABC_4016', 'ABC_4029', 'ABC_4076', 'ABC_4079', 'ABC_4081', 'ABC_4083', 'ABC_4085', 'ABC_4087', 'ABC_4092',
 	'ABC_4097', 'ABC_4099', 'ABC_4131', 'ABC_4139', 'ABC_4155', 'ABC_3824', 'ABC_3960', 'ABC_4226', 'DAM_2914', 'DAM_2929', 'ABC_4240', 'ABC_4278', 'DAM_2951',
-    'ABC_4354', 'ABC_4362', 'ABC_4366', 'ABC_4370', 'ABC_4386', 'DAM_3064', 'ABC_4413', 'ABC_4416', 'ABC_4419', 'ABC_4430', 'ABC_4440' ];
+    'ABC_4354', 'ABC_4362', 'ABC_4366', 'ABC_4370', 'ABC_4386', 'DAM_3064', 'ABC_4413', 'ABC_4416', 'ABC_4419', 'ABC_4430', 'ABC_4440', 'DAM_1981', 'DAM_1994',
+    'DAM_1998', 'DAM_2011', 'DAM_2014', 'DAM_2020', 'DAM_2028', 'DAM_2038', 'DAM_2050', 'DAM_2062', 'DAM_2069', 'DAM_2077', 'DAM_2081', 'DAM_2090', 'DAM_2096',
+    'DAM_2103', 'DAM_2114', 'DAM_2116', 'DAM_2123', 'DAM_2125', 'DAM_2134', 'DAM_2142', 'DAM_2145', 'DAM_2165', 'DAM_2169', 'DAM_2174', 'DAM_2201', 'DAM_2204'  ];
 	  images.forEach(function(image){
 	  		var imageDiv = $('<div></div>').attr({ class : 'col-md-4 ftco-animate'});
 	  		var imagePath = 'images/' + image + '.jpg';
 	  		var imageStyle = 'background-image: url(' + imagePath + ');';
-	  		var aTag = $('<a></a>').attr({ href : imagePath, class : 'photography-entry img image-popup d-flex justify-content-center align-items-center', style : imageStyle})
+	  		var aTag = $('<a></a>').attr({ href : imagePath, class : 'lazy photography-entry img image-popup d-flex justify-content-center align-items-center', style : imageStyle})
 	  					.append($('<div></div>').attr({class : 'overlay'}));
 	  		imageDiv.append(aTag);
 	  		$('#galleryContainer').append(imageDiv);
 	  });
 
+ 	$("img.lazy").Lazy({
+                placeholder: "data:image/gif;base64,R0lGODlhEALAPQAPzl5uLr9Nrl8e7..."
+             });
 
 	var fullHeight = function() {
 

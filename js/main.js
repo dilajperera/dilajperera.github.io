@@ -16,6 +16,18 @@
     scrollProperty: 'scroll'
   });
 
+	var images = [ 'ABC_3275', 'ABC_3279', 'ABC_3287', 'ABC_3294', 'ABC_3302', 'ABC_3305', 'ABC_3314', 'ABC_3317', 'ABC_3327', 'ABC_3331', 'ABC_3337',
+	'ABC_3343','DAM_2773', 'DAM_2810', 'ABC_3374', 'DAM_2820', 'ABC_3380', 'ABC_3388', 'DAM_2824', 'ABC_3395', 'ABC_3398', 'ABC_3410', 'ABC_3413', 'ABC_3417'];
+	  images.forEach(function(image){
+	  		var imageDiv = $('<div></div>').attr({ class : 'col-md-4 ftco-animate'});
+	  		var imagePath = 'images/' + image + '.jpg';
+	  		var imageStyle = 'background-image: url(' + imagePath + ');';
+	  		var aTag = $('<a></a>').attr({ href : imagePath, class : 'photography-entry img image-popup d-flex justify-content-center align-items-center', style : imageStyle})
+	  					.append($('<div></div>').attr({class : 'overlay'}));
+	  		imageDiv.append(aTag);
+	  		$('#galleryContainer').append(imageDiv);
+	  });
+
 
 	var fullHeight = function() {
 
@@ -184,8 +196,17 @@
     fixedContentPos: false
   });
 
-
-
+  /*var images = [ 'image_1', 'image_2', 'image_3', 'image_4', 'image_5', 'image_6', 'image_7', 'image_8', 'image_9', 'image_10'];
+  images.forEach(function(image){
+  		console.log(image);
+  		var imageDiv = $('<div></div>').attr({ class : 'col-md-4 ftco-animate'});
+  		var imagePath = 'images/' + image + '.jpg';
+  		var imageStyle = 'background-image: url(' + imagePath + ');';
+  		var aTag = $('<a></a>').attr({ href : imagePath, class : 'photography-entry img image-popup d-flex justify-content-center align-items-center', style : imageStyle})
+  					.append($('<div></div>').attr({class : 'overlay'}));
+  		imageDiv.append(aTag);
+  		$('#galleryContainer').append(imageDiv);
+  })*/
 
 })(jQuery);
 
